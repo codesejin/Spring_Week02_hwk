@@ -22,10 +22,10 @@ public class SpringWeek02HwkApplication {
     @Bean
     public CommandLineRunner demo(PersonRepository personRepository, PersonService personService) {
         return (args) -> {
-            //객체 생성
-            Person person1 = new Person("박세진",30,"일산","개발자");
+//            //객체 생성
+//            Person person1 = new Person("박세진",30,"일산","개발자");
             //데이터 저장하기
-            personRepository.save(person1);
+            personRepository.save(new Person("박세진",30,"일산","개발자"));
 
             System.out.println("데이터 인쇄");
             //전체조회하기

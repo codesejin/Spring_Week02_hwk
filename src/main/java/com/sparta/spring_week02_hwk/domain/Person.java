@@ -29,6 +29,13 @@ public class Person {
         this.job = job;
     }
 
+    public Person(String name, int age, String address, String job){
+        this.name = name;
+        this.age = age;
+        this.address = address;
+        this.job = job;
+    }
+
     public void update(PersonRequestDto requestDto) {
         this.name = requestDto.getName();
         this.age = requestDto.getAge();
