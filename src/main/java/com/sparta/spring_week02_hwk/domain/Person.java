@@ -22,7 +22,7 @@ public class Person {
     @Column(nullable = false)
     private String job;
 
-   public Person(String name, int age, String address, String job){
+   public Person(PersonRequestDto requestDto){
         this.name = name;
         this.age = age;
         this.address = address;
